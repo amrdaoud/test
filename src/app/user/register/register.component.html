@@ -1,0 +1,51 @@
+<mat-card >
+  <mat-card-header>
+    <mat-card-title>Registration Form
+    </mat-card-title>
+    <mat-card-subtitle>Please Fill The Below Form</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <div>
+
+    </div>
+    <form [formGroup]="registerForm" (ngSubmit)="register()">
+      <mat-form-field>
+        <mat-label>First Name</mat-label>
+        <input matInput formControlName="FirstName">
+      </mat-form-field>
+      <div>
+        <mat-form-field>
+          <mat-label>Last Name</mat-label>
+          <input matInput formControlName="LastName">
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field>
+          <mat-label>Username</mat-label>
+          <input matInput formControlName="Username">
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field>
+          <mat-label>Email</mat-label>
+          <input matInput formControlName="Email">
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field>
+          <mat-label>Password</mat-label>
+          <input matInput formControlName="Password" type="password">
+        </mat-form-field>
+      </div>
+
+      <div>
+        <button mat-raised-button type="submit" color="primary">Register</button>
+        <button mat-raised-button type="reset" (click)="registerForm.reset()">Reset</button>
+      </div>
+
+    </form>
+  </mat-card-content>
+</mat-card>
