@@ -35,10 +35,7 @@ This is a test branch
 hello its me Amr Ka
 
 
-<<<<<<< HEAD
 
 
 Karouni
-=======
 Amr Daoud
->>>>>>> 1c34581bbc905c73cdef1c083bc70bb2722dba8e
